@@ -1,10 +1,15 @@
 import type { Component } from "solid-js";
 
-import logo from "./logo.svg";
-import styles from "./App.module.css";
+import { Navbar } from "./components/navbar/Navbar";
+import { Welcome } from "./pages/welcome/Welcome";
 
 const App: Component = () => {
-  return <div class="container mx-auto">Hi</div>;
+  return (
+    <>
+      <Navbar />
+      <Welcome />
+    </>
+  );
 };
 
 export default App;
